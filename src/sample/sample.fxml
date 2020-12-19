@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="693.0" prefWidth="679.0" style="-fx-background-color: orange;" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="242.0" minWidth="193.0" prefWidth="202.0" />
+      <ColumnConstraints maxWidth="242.0" minWidth="19.0" prefWidth="24.0" />
+      <ColumnConstraints maxWidth="381.0" minWidth="145.0" prefWidth="316.0" />
+      <ColumnConstraints maxWidth="381.0" minWidth="145.0" prefWidth="316.0" />
+      <ColumnConstraints maxWidth="381.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="381.0" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints maxHeight="45.0" minHeight="7.0" prefHeight="45.0" />
+      <RowConstraints maxHeight="35.0" minHeight="6.0" prefHeight="13.0" />
+      <RowConstraints maxHeight="30.0" minHeight="2.0" prefHeight="21.0" />
+      <RowConstraints maxHeight="129.0" minHeight="106.0" prefHeight="106.0" />
+      <RowConstraints maxHeight="129.0" minHeight="106.0" prefHeight="106.0" />
+      <RowConstraints maxHeight="129.0" minHeight="106.0" prefHeight="106.0" />
+   </rowConstraints>
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../img/numero1.png" />
+         </image></ImageView>
+      <ImageView fitHeight="139.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../img/numero2.png" />
+         </image></ImageView>
+      <ImageView fitHeight="130.0" fitWidth="197.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../img/numero3.png" />
+         </image></ImageView>
+      <ImageView fitHeight="131.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+         <image>
+            <Image url="@../img/numero4.png" />
+         </image></ImageView>
+      <ImageView fitHeight="119.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+         <image>
+            <Image url="@../img/numero5.png" />
+         </image></ImageView>
+      <ImageView fitHeight="122.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+         <image>
+            <Image url="@../img/numero6.png" />
+         </image></ImageView>
+      <Label fx:id="nombre1" text="Label">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nivel1" text="Label" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="vida1" text="Label" GridPane.rowIndex="4">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+
+      <Label fx:id="nombre2" text="Label" GridPane.columnIndex="2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nivel2" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="nombre3" text="Label" GridPane.columnIndex="4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nivel3" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="vida2" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="vida3" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="4">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="nombre4" text="Label" GridPane.rowIndex="5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nivel4" text="Label" GridPane.rowIndex="6" />
+      <Label fx:id="nombre5" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nivel5" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Label fx:id="nombre6" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nivel6" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+      <ProgressBar prefWidth="200.0" progress="1.0" GridPane.rowIndex="3" />
+      <ProgressBar prefWidth="200.0" progress="1.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <ProgressBar prefWidth="200.0" progress="1.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <Label fx:id="vida4" text="Label" GridPane.rowIndex="9">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="vida5" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="9">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="vida6" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="9">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ProgressBar prefWidth="200.0" progress="1.0" GridPane.rowIndex="8" />
+      <ProgressBar prefWidth="200.0" progress="1.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+      <ProgressBar prefWidth="200.0" progress="1.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+      <ImageView fx:id="imagen1" fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ImageView fx:id="imagen2" fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <ImageView fx:id="extra" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+      <ImageView fitHeight="150.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+      <ImageView fx:id="imagen3" fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <ImageView fx:id="imagen4" fitHeight="37.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <ImageView fitHeight="150.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+      <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+   </children>
+</GridPane>
