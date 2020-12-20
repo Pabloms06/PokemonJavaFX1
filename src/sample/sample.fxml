@@ -125,10 +125,10 @@
       <ProgressBar prefWidth="200.0" progress="1.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
       <ImageView fx:id="imagen1" fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <ImageView fx:id="imagen2" fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-      <ImageView fx:id="extra" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+      <ImageView fx:id="imagen3" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
       <ImageView fitHeight="150.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-      <ImageView fx:id="imagen3" fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-      <ImageView fx:id="imagen4" fitHeight="37.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <ImageView fx:id="imagen4" fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <ImageView fx:id="imagen5" fitHeight="37.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
       <ImageView fitHeight="150.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7" />
       <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7" />
    </children>
