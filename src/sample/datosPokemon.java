@@ -4,11 +4,11 @@ public class datosPokemon {
 
 
         private String nombre;
-        private int nivel;
-        private int vida;
+        private String nivel;
+        private String vida;
         private char sexo;
 
-    public datosPokemon(String nombre, int nivel, int vida, char sexo) {
+    public datosPokemon(String nombre, String nivel, String vida, char sexo) {
         this.nombre = nombre;
         this.nivel = nivel;
         this.vida = vida;
@@ -34,33 +34,4 @@ public class datosPokemon {
         public char getSexo() {
             return sexo;
         }
-    public String setNombre(String nombre)
-    {
-        return nombre;
-    }
-
-    public int setNivel(int nivel)
-    {
-        return nivel;
-    }
-
-    public int setvida(int vida)
-    {
-        return vida;
-    }
-
-    public char setSexo(char sexo) {
-        return sexo;
-    }
-
-
-    @Override
-    public String toString() {
-        return "datosPokemon{" +
-                "nombre='" + nombre + '\'' +
-                ", nivel=" + nivel +
-                ", vida=" + vida +
-                ", sexo=" + sexo +
-                '}';
-    }
 }
