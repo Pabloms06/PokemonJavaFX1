@@ -7,12 +7,15 @@ public class datosPokemon {
         private String nivel;
         private String vida;
         private char sexo;
+        private String nivelpb;
 
-    public datosPokemon(String nombre, String nivel, String vida, char sexo) {
+
+    public datosPokemon(String nombre, String nivel, String vida, char sexo,String nivelpb) {
         this.nombre = nombre;
         this.nivel = nivel;
         this.vida = vida;
         this.sexo = sexo;
+        this.nivelpb= nivelpb;
     }
 
 
@@ -26,7 +29,7 @@ public class datosPokemon {
             return nivel;
         }
 
-        public String getvida()
+        public int getvida()
         {
             return vida;
         }
@@ -34,4 +37,34 @@ public class datosPokemon {
         public char getSexo() {
             return sexo;
         }
+
+        public char getnivelpb() {
+        return nivelpb;
+        }
+
+        public void setNombre (String nombre) {
+        this.nombre = nombre;
+        }
+
+        public void setNivel (String nivel) {
+        this.nivel = nombre;
+        }
+
+        public void setVida (String vida){
+        this.vida=vida;
+        }
+
+        public setsexo (char sexo){
+        this.sexo=sexo;
+        }
+
+        public setnivelpb (String nivelpb){
+        this.nivelpb=nivelpb;
+        }
+
+    public String getActualLife() {
+    }
+
+    public String getMaxLife() {
+    }
 }
