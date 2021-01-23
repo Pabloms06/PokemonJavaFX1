@@ -33,27 +33,27 @@
       <RowConstraints maxHeight="169.0" minHeight="106.0" prefHeight="137.0" />
    </rowConstraints>
    <children>
-      <ImageView fitHeight="139.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+      <ImageView fx:id="numero1" fitHeight="139.0" fitWidth="204.0" onMouseClicked="#Pokemon1" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
          <image>
             <Image url="@../img/numero1.png" />
          </image></ImageView>
-      <ImageView fitHeight="139.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+      <ImageView fx:id="numero2" fitHeight="139.0" fitWidth="189.0" onMouseClicked="#Pokemon2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
          <image>
             <Image url="@../img/numero2.png" />
          </image></ImageView>
-      <ImageView fitHeight="130.0" fitWidth="197.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+      <ImageView fx:id="numero3" fitHeight="130.0" fitWidth="197.0" onMouseClicked="#Pokemon3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
          <image>
             <Image url="@../img/numero3.png" />
          </image></ImageView>
-      <ImageView fitHeight="131.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+      <ImageView fx:id="numero4" fitHeight="131.0" fitWidth="172.0" onMouseClicked="#Pokemon4" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="10">
          <image>
             <Image url="@../img/numero4.png" />
          </image></ImageView>
-      <ImageView fitHeight="119.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+      <ImageView fx:id="numero5" fitHeight="119.0" fitWidth="198.0" onMouseClicked="#Pokemon5" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10">
          <image>
             <Image url="@../img/numero5.png" />
          </image></ImageView>
-      <ImageView fitHeight="122.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+      <ImageView  fx:id="numero6" fitHeight="122.0" fitWidth="170.0" onMouseClicked="#Pokemon6" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="10">
          <image>
             <Image url="@../img/numero6.png" />
          </image></ImageView>
@@ -125,6 +125,10 @@
          <font>
             <Font size="18.0" />
          </font></Label>
+      <Label alignment="CENTER" prefHeight="51.0" prefWidth="193.0" text="Elige un pokemon..." GridPane.columnIndex="2" GridPane.rowIndex="13">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font></Label>
       <Label fx:id="vida5" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="12">
          <font>
             <Font size="18.0" />
@@ -136,20 +140,24 @@
       <ProgressBar fx:id="pb4" prefWidth="200.0" progress="1.0" GridPane.rowIndex="11" />
       <ProgressBar fx:id="pb5" prefWidth="200.0" progress="1.0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
       <ProgressBar fx:id="pb6" prefWidth="200.0" progress="1.0" GridPane.columnIndex="4" GridPane.rowIndex="11" />
-      <ImageView fx:id="sexo1" fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <ImageView fx:id="sexo2" fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-      <ImageView fx:id="sexo3" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-      <ImageView fitHeight="150.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-      <ImageView fx:id="sexo4" fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-      <ImageView fx:id="sexo5" fitHeight="37.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9" />
-      <ImageView fx:id="sexo6" fitHeight="37.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+      <Label fx:id="sexo1" text="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="sexo2" text="" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label fx:id="sexo3" text="" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+      <Label fx:id="sexo4" text="" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Label fx:id="sexo5" text="" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+      <Label fx:id="sexo6" text="" GridPane.columnIndex="6" GridPane.rowIndex="9" />
       <ImageView fitHeight="150.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9" />
       <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9" />
-      <Label fx:id="boton" text="Siguiente" GridPane.columnIndex="5" GridPane.rowIndex="13">
+      <Button fx:id="boton" onMouseClicked="#llamada" prefHeight="23.0" prefWidth="92.0" text="Siguiente" GridPane.columnIndex="5" GridPane.rowIndex="13">
          <font>
-            <Font name="System Italic" size="24.0" />
+            <Font name="System Italic" size="12.0" />
          </font>
-      </Label>
+      </Button>
+      <Button fx:id="basura" onMouseClicked="#Eliminar" prefHeight="15.0" prefWidth="85.0" text="Basura" GridPane.columnIndex="0" GridPane.rowIndex="13">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
       <ProgressBar prefWidth="200.0" progress="0.0" GridPane.rowIndex="5" />
    </children>
 </GridPane>

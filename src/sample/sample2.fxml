@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../background/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+   <children>
+      <Button layoutX="489.0" layoutY="355.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="97.0" text="Atacar" />
+      <Button layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onMouseClicked="#Curar" prefHeight="31.0" prefWidth="74.0" text="Curar" />
+      <Button fx:id="botonclose" layoutX="560.0" layoutY="14.0" mnemonicParsing="false" onAction="#cerrarventana" prefHeight="8.0" prefWidth="21.0" text="X" />
+      <ImageView fx:id="numero1" fitHeight="111.0" fitWidth="144.0" layoutX="397.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/klipartz.com%20(40).png" />
+         </image></ImageView>
+      <ImageView fitHeight="118.0" fitWidth="171.0" layoutX="51.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nombre1" layoutX="45.0" layoutY="302.0" text="Nombre 1" />
+      <Label fx:id="vida1" layoutX="39.0" layoutY="141.0" text="Vida 1" />
+      <Label fx:id="nivel1" layoutX="168.0" layoutY="141.0" text="Nivel 1" />
+      <ProgressBar fx:id="pb1" layoutX="37.0" layoutY="319.0" prefHeight="17.0" prefWidth="144.0" progress="1.0" />
+      <ProgressBar fx:id="pb2" layoutX="391.0" layoutY="200.0" prefHeight="17.0" prefWidth="185.0" progress="1.0" />
+      <Label fx:id="vida2" layoutX="379.0" layoutY="39.0" text="Vida r" />
+      <Label fx:id="nivel2" layoutX="532.0" layoutY="39.0" text="Nivel r" />
+      <Label fx:id="nombre2" layoutX="401.0" layoutY="174.0" text="Nombre r" />
+      <Button layoutX="265.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#comenzar" text="Comenzar" />
+   </children>
+</AnchorPane>

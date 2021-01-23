@@ -3,10 +3,11 @@ package sample;
 public class datosPokemon {
 
 
-        private String nombre;
+    public Object numero1;
+    private String nombre;
         private String nivel;
         private String vida;
-        private char sexo;
+        private String sexo;
         private String nivelpb;
 
 
@@ -29,16 +30,16 @@ public class datosPokemon {
             return nivel;
         }
 
-        public int getvida()
+        public String getvida()
         {
             return vida;
         }
 
-        public char getSexo() {
+        public String getSexo() {
             return sexo;
         }
 
-        public char getnivelpb() {
+        public String getnivelpb() {
         return nivelpb;
         }
 
@@ -54,17 +55,11 @@ public class datosPokemon {
         this.vida=vida;
         }
 
-        public setsexo (char sexo){
+        public void setSexo (String sexo){
         this.sexo=sexo;
         }
 
-        public setnivelpb (String nivelpb){
+        public void setnivelpb (String nivelpb){
         this.nivelpb=nivelpb;
         }
-
-    public String getActualLife() {
-    }
-
-    public String getMaxLife() {
-    }
 }
