@@ -132,24 +132,24 @@ public class Controller {
     int option = 0;
 
 
-int total =0;
+    int total =0;
 
 
     public Object datosPokemon;
     private Object sexo;
 
 
-    datosPokemon Pokemon1 = new datosPokemon("Jolteon", "65", "204", 'M',"80");
+    datosPokemon Pokemon1 = new datosPokemon("Jolteon", "65", "204", "M","80");
 
-    datosPokemon Pokemon2 = new datosPokemon("Charizard", "45", "148",'M', "55");
+    datosPokemon Pokemon2 = new datosPokemon("Charizard", "45", "148","M", "55");
 
-    datosPokemon Pokemon3 = new datosPokemon("Vaporeon", "54", "234", 'M',"70");
+    datosPokemon Pokemon3 = new datosPokemon("Vaporeon", "54", "234", "M","70");
 
-    datosPokemon Pokemon4 = new datosPokemon("Blastoise", "65", "222", 'M',"82");
+    datosPokemon Pokemon4 = new datosPokemon("Blastoise", "65", "222", "M","82");
 
-    datosPokemon Pokemon5 = new datosPokemon("Newtwo", "75", "298", 'M',"20");
+    datosPokemon Pokemon5 = new datosPokemon("Newtwo", "75", "298", "M","20");
 
-    datosPokemon Pokemon6 = new datosPokemon("Butterfree", "54", "160", 'M',"30");
+    datosPokemon Pokemon6 = new datosPokemon("Butterfree", "54", "160", "M","30");
     @FXML
     public void initialize() {
 
@@ -214,7 +214,7 @@ int total =0;
     }
 
     @FXML
-    private void onButtonAbrirClicked(MouseEvent event) {
+    private void Abrirventana() {
         try {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("sample2.fxml"));
@@ -231,8 +231,6 @@ int total =0;
             controller.mandarInfoDesdeVentana1(Pokemon1);
             controller.reenviarinfo(this);
 
-
-            // menu de pokemons locura
             switch (option) {
                 case 1:
                     controller.mandarInfoDesdeVentana1(Pokemon1);

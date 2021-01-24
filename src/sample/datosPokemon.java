@@ -4,14 +4,14 @@ public class datosPokemon {
 
 
     public Object numero1;
-    private String nombre;
-        private String nivel;
-        private String vida;
-        private String sexo;
-        private String nivelpb;
+    public String nombre;
+    public String nivel;
+    public String vida;
+    public String sexo;
+    public String nivelpb;
 
 
-    public datosPokemon(String nombre, String nivel, String vida, char sexo,String nivelpb) {
+    public datosPokemon(String nombre, String nivel, String vida, String sexo,String nivelpb) {
         this.nombre = nombre;
         this.nivel = nivel;
         this.vida = vida;
@@ -30,7 +30,7 @@ public class datosPokemon {
             return nivel;
         }
 
-        public String getvida()
+        public boolean getvida()
         {
             return vida;
         }

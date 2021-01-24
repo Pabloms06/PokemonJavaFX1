@@ -14,6 +14,8 @@ public class Main extends Application {
         primaryStage.setTitle("Aplicacion Pokemon");
         primaryStage.setScene(new Scene(root, 800, 800));
         primaryStage.show();
+
+
     }
 
 

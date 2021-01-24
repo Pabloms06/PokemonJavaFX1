@@ -8,7 +8,7 @@
    <children>
       <Button layoutX="489.0" layoutY="355.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="97.0" text="Atacar" />
       <Button layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onMouseClicked="#Curar" prefHeight="31.0" prefWidth="74.0" text="Curar" />
-      <Button fx:id="botonclose" layoutX="560.0" layoutY="14.0" mnemonicParsing="false" onAction="#cerrarventana" prefHeight="8.0" prefWidth="21.0" text="X" />
+      <Button fx:id="botonclose" layoutX="560.0" layoutY="14.0" mnemonicParsing="false" onAction="#cerrarventana" prefHeight="8.0" prefWidth="21.0" text="X" textFill="RED" />
       <ImageView fx:id="numero1" fitHeight="111.0" fitWidth="144.0" layoutX="397.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/klipartz.com%20(40).png" />
@@ -22,6 +22,6 @@
       <Label fx:id="vida2" layoutX="379.0" layoutY="39.0" text="Vida r" />
       <Label fx:id="nivel2" layoutX="532.0" layoutY="39.0" text="Nivel r" />
       <Label fx:id="nombre2" layoutX="401.0" layoutY="174.0" text="Nombre r" />
-      <Button layoutX="265.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#comenzar" text="Comenzar" />
+      <Button layoutX="265.0" layoutY="14.0" mnemonicParsing="false" onAction="#comenzar" text="Comenzar" />
    </children>
 </AnchorPane>
